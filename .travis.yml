@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: mXF8nyYijewgmyHoAusocIs8x6OMRW3GulMP5Mkjt8fhwAHt3MNQU2fhn4ljyrJ61wy4LPJY9LknlX/sk+KwoRqcTJWDeb6MOoH/OyhCGOraryI1yk6C7mV4nA/13NiboM0DwnOk9P0rztQiRZ1JLEzZwXY8OwUM1d3pKhEfL4bc8BDFTFKe+f9TYYtLhsbSaa7imee9PLXdAumZqRXDViO+dvVvMAQOo7ETvzuFWQ53iyK3qImO2JJG2aZ2e/eieekdmMSokVltNOxY0h2cSPujUn4NRpcs6jYkxsvAuDMzZWvODdsycAY37iMGwPEJjSK4InGtWuGWf6+So1/wJY+6Boo5LyIxOi+Tk9CIKfxPg4ir+zzhnIQH1vhZhC3mk16dlacQJ24xuzwf9nEVH7DsHS5GoEf3+ZJW69IIzUYao2rgsqxXOWPRIuLG9jwCTVTKOZLGIM7CyXsNNWggl9Qvu0svNBfex6Cy0Vg8oHlDKpJX4of5WCIb/ORJ+PhqFieZ1tjTc6RNu27De1K/xWA25ADh2KD17rn5sq5SBDVvEIBrqKBRkyqHVV7EkOP8ISXzajJnoTmYSe+Yn4/Sa2DrKIx+U1S5TZ4UYtIqrXhTsW0nzy0lQX5Q4srDRdOkk8WowjqLuWkvr4F55mz6dWYk7Qm2gf5Lj33Pohu69hI=
+  app: boiling-hamlet-20986
+  on:
+    repo: velafarq/hot-cold-testing
