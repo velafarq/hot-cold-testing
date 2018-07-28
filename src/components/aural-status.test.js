@@ -13,6 +13,6 @@ describe('<AuralStatus />', () => {
         const wrapper =  shallow(<AuralStatus auralStatus = {auralStatus}/>);
        
         expect(wrapper.type()).toEqual('p');
-        expect(wrapper.contains(auralStatus)).toEqual(true);
+        expect(wrapper.contains(auralStatus)).toEqual(true); 
     });
 });
